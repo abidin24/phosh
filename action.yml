@@ -214,7 +214,7 @@ runs:
         sudo mount $ROOT_LOOP /var/cache/manjaro-arm-tools/root
         ls -lasih /var/cache/manjaro-arm-tools/boot 
         cp /var/cache/manjaro-arm-tools/boot/vmlinuz-linux-sdm845 ./vmlinuz-linux-sdm845
-        cat /var/cache/manjaro-arm-tools/boot/dtb/linux-sdm845/qcom/sdm845-oneplus-fajita.dtb >> ./vmlinuz-linux-sdm845
+        cat /var/cache/manjaro-arm-tools/boot/dtb/linux-sdm845/qcom/sdm845-oneplus-enchilada.dtb >> ./vmlinuz-linux-sdm845
         sudo abootimg --create ./manjaro-boot.img -k ./vmlinuz-linux-sdm845 -r /var/cache/manjaro-arm-tools/boot/initramfs-linux-sdm845.img -c "cmdline= root=/dev/sda17"
         sudo cp -r /var/cache/manjaro-arm-tools/boot /var/cache/manjaro-arm-tools/root/boot
         sudo sed 1d /var/cache/manjaro-arm-tools/root/etc/fstab
