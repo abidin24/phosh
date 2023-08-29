@@ -41,7 +41,7 @@ jobs:
           access_token: ${{ github.token }}
       - 
         id: image-build
-        uses: silime/phosh@master
+        uses: abidin24/phosh@master
         with:
           arm-profiles-repo: https://github.com/silime/arm-profiles
           device: ${{ matrix.device }}
